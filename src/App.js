@@ -5,6 +5,7 @@ import Home from './page/Home.js'
 import Nopage from './page/Nopage.js'
 import About from './page/About.js';
 import Header from './component/Header.js';
+import Footer from './component/Footer.js';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   )

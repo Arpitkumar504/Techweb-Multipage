@@ -1,30 +1,35 @@
-import React from 'react'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import React, { useState } from 'react'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { GrClose } from 'react-icons/gr'
+import { Link } from 'react-router-dom';
 const Header = () => {
+    const [show, setshow] = useState(false);
     return (
-        <div className='header'>
+        <div className={show ? "header active" : "header"}>
             <div className="logo">
-                <img src="./image/logo.jpg" alt="#" />
+                <Link to="/" >
+                    <img src="./image/logo.jpg" alt="#" />
+                </Link>
             </div>
             <div className="navbar">
                 <ul className='navlist'>
                     <li>
-                        Home
+                        <Link to="/" onClick={() => { setshow(false) }}>Home</Link>
                     </li>
                     <li>
-                        About
+                        <Link to="/about" onClick={() => { setshow(false) }}>About</Link>
                     </li>
                     <li>
-                        Services
+                        <Link to="/" onClick={() => { setshow(false) }}>Services</Link>
                     </li>
                     <li>
-                        Contact
+                        <Link to="/" onClick={() => { setshow(false) }}>Contact</Link>
                     </li>
                 </ul>
             </div>
-            <div className="navbutton">
+            <div className="navbutton" onClick={() => { setshow(!show) }}>
                 <AiOutlineMenu className='open navbtn' />
-                <AiOutlineClose className='close navbtn' />
+                <GrClose className='close navbtn' />
             </div>
         </div>
     )
