@@ -4,27 +4,28 @@ import { BsTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import { HiLink } from 'react-icons/hi';
 import { BiCopyright } from 'react-icons/bi'
+import {SiMinutemailer} from 'react-icons/si'
 
 const Footer = () => {
   return (
     <div className='footercontent'>
       <div className='footer'>
-        <div className='info'>
+        <div className='info footerdiv'>
           <div className='heading'>
             <h5>ArpitTech</h5>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis eveniet, nisi</p>
         </div>
-        <div className='suscribe'>
+        <div className='suscribe footerdiv'>
           <div className='heading'>
             <h5>Suscribe Us Now</h5>
           </div>
           <div className='inputs'>
             <input type="text" name='update' placeholder='Enter email' />
-            <button type='button'>SUSCRIBE</button>
+            <SiMinutemailer className="icon"/>
           </div>
         </div>
-        <div className='social'>
+        <div className='social footerdiv'>
           <div className='heading'>
             <h5>Follow Us</h5>
           </div>
@@ -34,7 +35,7 @@ const Footer = () => {
             <AiFillTwitterCircle className='icon' />
           </div>
         </div>
-        <div className="contact">
+        <div className="contact footerdiv">
           <div className='heading'>
             <h5>Call Us</h5>
           </div>

@@ -247,11 +247,6 @@ body {
   background-color: #f3f3f3;
 }
 
-.footercontent hr {
-  margin: 0;
-  color: black;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -263,8 +258,9 @@ body {
   height: 50px;
 }
 
-.footer div:first-child {
+.footer .footerdiv {
   width: 300px;
+
 }
 
 .footer .info {
@@ -279,7 +275,6 @@ body {
 
 .footer p {
   font-size: 16px;
-  /* font-weight: bold; */
 }
 
 .footer .social .socialicons {
@@ -300,25 +295,25 @@ body {
 .footer .inputs {
   display: flex;
   align-items: center;
-  justify-content: between;
+  justify-content: space-between;
   border: 2px solid black;
   border-radius: 10px;
+  width: 250px;
 }
 
 .footer input {
   background-color: #f3f3f3;
   outline: none;
   border: none;
+  width: 100%;
   font-size: 20px;
+  margin-left: 10px;
 }
 
-.footer .inputs button {
-  padding: 10px 10px;
-  background-color: #1d1d1d;
-  color: #f3f3f3;
-  font-weight: bold;
-  border: none;
-  outline: none;
+.footer .inputs .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 .copyright {
@@ -339,4 +334,11 @@ body {
   justify-content: center;
   gap: 5px;
   margin: 0;
+}
+
+@media(max-width:576px) {
+  .footer .footerdiv {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
