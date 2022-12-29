@@ -20,10 +20,10 @@ const Header = () => {
                         <Link to="/about" onClick={() => { setshow(false) }}>About</Link>
                     </li>
                     <li>
-                        <Link to="/" onClick={() => { setshow(false) }}>Services</Link>
+                        <Link to="/service" onClick={() => { setshow(false) }}>Services</Link>
                     </li>
                     <li>
-                        <Link to="/" onClick={() => { setshow(false) }}>Contact</Link>
+                        <Link to="/Contact" onClick={() => { setshow(false) }}>Contact</Link>
                     </li>
                 </ul>
             </div>

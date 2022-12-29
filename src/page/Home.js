@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from '../component/Header';
+import Contacts from '../component/Contacts';
 import Hero from '../component/Hero'
+import Services from '../component/Services';
 
 const Home = () => {
   const data = {
@@ -10,6 +11,8 @@ const Home = () => {
   return (
     <div>
       <Hero {...data} />
+      <Services />
+      <Contacts />
     </div>
   )
 }

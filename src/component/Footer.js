@@ -4,7 +4,7 @@ import { BsTelephoneFill } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import { HiLink } from 'react-icons/hi';
 import { BiCopyright } from 'react-icons/bi'
-import {SiMinutemailer} from 'react-icons/si'
+import { SiMinutemailer } from 'react-icons/si'
 
 const Footer = () => {
   return (
@@ -22,12 +22,12 @@ const Footer = () => {
           </div>
           <div className='inputs'>
             <input type="text" name='update' placeholder='Enter email' />
-            <SiMinutemailer className="icon"/>
+            <SiMinutemailer className="icon" />
           </div>
         </div>
         <div className='social footerdiv'>
           <div className='heading'>
-            <h5>Follow Us</h5>
+            <h5>Follow Us On</h5>
           </div>
           <div className='socialicons'>
             <AiFillFacebook className='icon' />
