@@ -8,10 +8,12 @@ import Contact from './page/Contact.js';
 import Header from './component/Header.js';
 import Footer from './component/Footer.js';
 import Service from './page/Service.js';
+import Gototop from './component/Gototop.js';
 
 const App = () => {
   return (
     <div>
+      <Gototop />
       <BrowserRouter>
         <Header />
         <Routes>
