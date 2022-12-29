@@ -9,6 +9,7 @@ import Header from './component/Header.js';
 import Footer from './component/Footer.js';
 import Service from './page/Service.js';
 import Gototop from './component/Gototop.js';
+import Singleproduct from './page/Singleproduct.js';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path='/service' element={<Service />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/singleproduct/:id' element={<Singleproduct />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
         <Footer />

@@ -7,6 +7,7 @@ const api = "https://api.pujakaitem.com/api/products";
 const intialstate = {
     data: [],
     isLoading: true,
+    singleproduct: {},
 };
 
 const AppProvider = ({ children }) => {
@@ -26,12 +27,27 @@ const AppProvider = ({ children }) => {
         }
     }
 
+    const getsingleproduct = async (url) => {
+        try {
+            const datasingle = await axios.get(url);
+            dispatch({
+                type: "getsingleproduct",
+                payload: {
+                    singledata: datasingle.data,
+                },
+            })
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }
+
     useEffect(() => {
         getdata(api);
     })
 
     return (
-        <Appcontext.Provider value={{ ...state }}>
+        <Appcontext.Provider value={{ ...state, getsingleproduct }}>
             {children}
         </Appcontext.Provider>
     )

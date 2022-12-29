@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../context/Contexts'
 import Card from './Card';
 
@@ -12,17 +13,17 @@ const Services = () => {
           data.map((element) => {
             const { id, name, image } = element;
             return (
-              <Card
-                key={id}
-                name={name}
-                image={image}
-              />
+              <Link to={`/singleproduct/${id}`} >
+                <Card
+                  key={id}
+                  name={name}
+                  image={image}
+                />
+              </Link>
             )
-
           })
         }
       </div>
-
     </div>
   )
 }

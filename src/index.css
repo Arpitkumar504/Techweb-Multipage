@@ -378,6 +378,10 @@ body {
   flex-wrap: wrap;
 }
 
+.servicedata a:link {
+  text-decoration: none;
+}
+
 .serviceheading {
   font-size: 25px;
   font-weight: bold;
@@ -416,6 +420,10 @@ body {
 @media(max-width:576px) {
   .service .card {
     margin: 10px auto;
+  }
+
+  .servicedata {
+    display: block;
   }
 }
 
@@ -537,5 +545,48 @@ body {
 
   100% {
     transform: translateY(4px);
+  }
+}
+
+/* singleproduct section */
+.singleproduct {
+  margin: 100px 0;
+}
+
+.singleproduct .productcontent {
+  padding: 20px;
+}
+
+.singleproduct h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.singleproduct h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.singleproduct button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #1d1d1d;
+  color: #f3f3f3;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.singleproduct button:hover {
+  background-color: #f3f3f3;
+  color: #1d1d1d;
+}
+
+@media(max-width:576px) {
+  .singleproduct {
+    margin: 20px 0;
   }
 }

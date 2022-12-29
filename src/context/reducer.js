@@ -6,6 +6,12 @@ const reducer = (state, action) => {
                 data: action.payload.alldata,
             }
         }
+        case "getsingleproduct": {
+            return {
+                ...state,
+                singleproduct: action.payload.singledata,
+            }
+        }
     }
     return state;
 }
